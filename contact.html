@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say 'yes' to travel; where every journey becomes a chapter in the book of life</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="index.html" class="logo"><span>T</span>ravel<span> B</span>log</a>
+
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="selNav">home</a>
+            <a href="blogs.html" class="selNav">Blogs</a>
+            <a href="places.html" class="selNav">places</a>
+            <a href="contact.html" class="selNav active" >contact</a>
+            <a href="about.html" class="selNav">about us</a>
+        </nav>
+
+        <div class="icons" id="userDropdown">
+            <i class="fas fa-user-circle" onclick="logout()"></i>
+            </div>
+    </header>
+
+    <!-- header section ends -->
+
+
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+
+            <form id="contact-form" onsubmit="submitContactForm(event)">
+                <div class="inputBox">
+                    <input type="text" placeholder="Name" id="contact-name">
+                    <span class="error-message"></span>
+                </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="Email" id="contact-email">
+                    <div class="error" id="contact-email-error"></div>
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Number" id="contact-number">
+                    <div class="error" id="contact-number-error"></div>
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Subject" id="contact-subject">
+                    <div class="error" id="contact-subject-error"></div>
+                </div>
+                <textarea placeholder="message" id="contact-message" cols="30" rows="10"></textarea>
+                <div class="error" id="contact-message-error"></div>
+                <input type="submit" class="btn" value="send message">
+            </form>
+
+        </div>
+
+        <!-- Success Message -->
+        <div id="success-message" class="success-message"></div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+
+
+    <!-- footer section  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>We are passionate about exploring new horizons and sharing our experiences with you. Our website is
+                    dedicated to the love of travel and the discovery of life's adventures.</p>
+            </div>
+            <div class="box">
+                <h3>places</h3>
+                <a href="#">india</a>
+                <a href="#">australia</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">home</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="places.html">Places</a>
+                <a href="contact.html">contact</a>
+                <a href="about.html">about us</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> created by <span> Bloggers </span> | all rights reserved! </h1>
+
+    </section>
+
+    <!-- custom js file link  -->
+    <script src="js/script1.js"></script>
+    <script src="js/authentication.js"></script>
+
+</body>
+
+</html>
