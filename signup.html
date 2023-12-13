@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" style="background: cornflowerblue;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say 'yes' to travel; where every journey becomes a chapter in the book of life</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Signup form container  -->
+
+    <div class="signup-form">
+
+        <!-- <a href="index.html"><i class="fas fa-times" id="form-close"></i></a> -->
+
+        <h2>Register</h2>
+        <form role="form" onsubmit="signUp(event);" autocomplete="off" enctype="multipart/form-data">
+            <div class="field firstname">
+                <div class="input-area">
+                    <input type="text" placeholder="First Name" name="fname" id="fname" autocapitalize="none" >
+                    <i class="icon fas fa-pen"></i>
+                </div>
+                <div class="error" id="fname-error"></div>
+            </div>
+            <div class="field lastname">
+                <div class="input-area">
+                    <input type="text" placeholder="Last Name" name="lname" id="lname" >
+                    <i class="icon fas fa-pen"></i>
+                </div>
+                <div class="error" id="lname-error"></div>
+            </div>
+            <div class="field email">
+                <div class="input-area">
+                    <input type="email" class="box" placeholder="Email Address" name="email" id="email"  >
+                    <i class="icon fas fa-envelope"></i>
+                </div>
+                <div class="error" id="email-error"></div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password (min. 6 characters)" name="pwd" id="pwd" >
+                    <i class="icon fas fa-lock"></i>
+                </div>
+                <div class="error" id="pwd-error"></div>
+            </div>
+            <input type="submit" value="Register">
+        </form>
+        <div class="success" id="success-message"></div>
+        <div class="login-txt">Already a Member ? <a href="login.html">Login</a></div>
+
+    </div>
+
+
+    <!-- custom js file link  -->
+    <script src="js/authentication.js"></script>
+
+</body>
+
+</html>

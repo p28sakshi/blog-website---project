@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" style="background: cornflowerblue;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say 'yes' to travel; where every journey becomes a chapter in the book of life</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- login form container  -->
+
+    <div class="login-form">
+
+        <!-- <a href="index.html"><i class="fas fa-times" id="form-close"></i></a> -->
+
+        <h2>Login</h2>
+        <form role="form" onsubmit="signIn(event);" autocomplete="off">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="email" class="box" placeholder="Email Address" name="email" id="email" autocapitalize="none">
+                    <i class="icon fas fa-envelope"></i>
+                </div>
+                <div class="error error-txt" id="email-error"></div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password" name="pwd" id="pwd">
+                    <i class="icon fas fa-lock"></i>
+                </div>
+                <div class="error error-txt" id="pwd-error"></div>
+            </div>
+            <div class="error email-error-message" id="email-error-message"></div>
+            <input type="submit" value="Login">
+        </form>
+        <div class="sign-txt">Not yet member? <a href="signup.html">Signup now</a></div>
+        <!-- Success message container -->
+        <div class="success-message" id="success-message"></div>
+
+    </div>
+
+
+    <!-- custom js file link  -->
+    <script src="js/authentication.js"></script>
+
+</body>
+
+</html>
