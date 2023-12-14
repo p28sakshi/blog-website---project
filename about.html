@@ -1,207 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Say 'yes' to travel; where every journey becomes a chapter in the book of
+      life
+    </title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Say 'yes' to travel; where every journey becomes a chapter in the book of life</title>
-
-    
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- header section starts  -->
 
     <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
 
-        <div id="menu-bar" class="fas fa-bars"></div>
+      <div class="logo">
+        <img src="./images/Logo.png" alt="logo" />
+      </div>
 
-        <a href="index.html" class="logo"><span>T</span>ravel<span> B</span>log</a>
+      <nav class="navbar" id="navbar">
+        <a href="index.html" class="selNav">home</a>
+        <a href="blogs.html" class="selNav">Blogs</a>
+        <a href="places.html" class="selNav">places</a>
+        <a href="contact.html" class="selNav">contact</a>
+        <a href="about.html" class="selNav active">about us</a>
+      </nav>
 
-         <nav class="navbar" id="navbar">
-            <a href="index.html" class="selNav">home</a>
-            <a href="blogs.html" class="selNav">Blogs</a>
-            <a href="places.html" class="selNav">places</a>
-            <a href="contact.html" class="selNav">contact</a>
-            <a href="about.html" class="selNav active">about us</a>
-        </nav>
-
-        <div class="icons" id="userDropdown">
-            <i class="fas fa-user-circle" onclick="logout()"></i>
-            </div>
+      <div class="icons" id="userDropdown">
+        <i class="fas fa-user-circle" onclick="logout()"></i>
+      </div>
     </header>
 
     <!-- gallery section starts  -->
 
     <section class="about" id="about">
+      <h1 class="heading">
+        <span>w</span>
+        <span>h</span>
+        <span>o</span>
+        <span></span>
+        <span>w</span>
+        <span>e</span>
+        <span></span>
+        <span>a</span>
+        <span>r</span>
+        <span>e</span>
+      </h1>
 
-        <h1 class="heading">
-            <span>w</span>
-            <span>h</span>
-            <span>o</span>
-            <span></span>
-            <span>w</span>
-            <span>e</span>
-            <span></span>
-            <span>a</span>
-            <span>r</span>
-            <span>e</span>
-        </h1>
-
-        <div class="box-container">
-            <div class="content">
-                <p>We are passionate about exploring new horizons and sharing our experiences with you. Our website is
-                dedicated to the love of travel and the discovery of life's adventures.</p>
-            </div>
-
-            <div class="box">
-                <img src="images/p-1.jpg" alt="">
-                <div class="content">
-                    <h3>Bloggers</h3>
-                    <p>Web Developer</p>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/p-2.jpg" alt="">
-                <div class="content">
-                    <h3>Sunny Patel</h3>
-                    <p>Backend Developer</p>   
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/p-3.jpg" alt="">
-                <div class="content">
-                    <h3>Swetha Naidu</h3>
-                    <p>UI/UX Designer</p>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/p-4.jpg" alt="">
-                <div class="content">
-                    <h3>Mira Chavda</h3>
-                    <p>Content Writer</p>
-                </div>
-            </div>
+      <div class="box-container">
+        <div class="content">
+          <p>
+            We are passionate about exploring new horizons and sharing our
+            experiences with you. Our website is dedicated to the love of travel
+            and the discovery of life's adventures.
+          </p>
         </div>
 
-        
-
+        <div class="box">
+          <img src="images/p-1.jpg" alt="" />
+          <div class="content">
+            <h3>Bloggers</h3>
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/p-2.jpg" alt="" />
+          <div class="content">
+            <h3>Sunny Patel</h3>
+            <p>Backend Developer</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/p-3.jpg" alt="" />
+          <div class="content">
+            <h3>Swetha Naidu</h3>
+            <p>UI/UX Designer</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/p-4.jpg" alt="" />
+          <div class="content">
+            <h3>Mira Chavda</h3>
+            <p>Content Writer</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- about section ends -->
 
     <section class="review" id="review">
-
-    <div class="swiper-container review-slider">
-
+      <div class="swiper-container review-slider">
         <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/pic1.png" alt="" />
+              <h3>Tori Lyson</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                adipisci quisquam sunt nesciunt fugiat odit minus illum
+                asperiores dolorum enim sint quod ipsam distinctio molestias
+                consectetur ducimus beatae, reprehenderit exercitationem!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/pic2.png" alt="" />
+              <h3>John Matthews</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                adipisci quisquam sunt nesciunt fugiat odit minus illum
+                asperiores dolorum enim sint quod ipsam distinctio molestias
+                consectetur ducimus beatae, reprehenderit exercitationem!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/pic3.png" alt="" />
+              <h3>Samantha Head</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                adipisci quisquam sunt nesciunt fugiat odit minus illum
+                asperiores dolorum enim sint quod ipsam distinctio molestias
+                consectetur ducimus beatae, reprehenderit exercitationem!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/pic4.png" alt="" />
+              <h3>Paige Polanswaki</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                adipisci quisquam sunt nesciunt fugiat odit minus illum
+                asperiores dolorum enim sint quod ipsam distinctio molestias
+                consectetur ducimus beatae, reprehenderit exercitationem!
+              </p>
+            </div>
+          </div>
 
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="images/pic1.png" alt="">
-                    <h3>Tori Lyson</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
-                        fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
-                        consectetur ducimus beatae, reprehenderit exercitationem!</p>
-
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="images/pic2.png" alt="">
-                    <h3>John Matthews</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
-                        fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
-                        consectetur ducimus beatae, reprehenderit exercitationem!</p>
-                    
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="images/pic3.png" alt="">
-                    <h3>Samantha Head</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
-                        fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
-                        consectetur ducimus beatae, reprehenderit exercitationem!</p>
-                    
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="images/pic4.png" alt="">
-                    <h3>Paige Polanswaki</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
-                        fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
-                        consectetur ducimus beatae, reprehenderit exercitationem!</p>
-                    
-                </div>
-            </div>
-
-            <div class="controls">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-
+          <div class="controls">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
         </div>
-
-    </div>
-
-</section>
+      </div>
+    </section>
 
     <!-- footer section  -->
 
     <section class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>about us</h3>
-                <p>We are passionate about exploring new horizons and sharing our experiences with you. Our website is
-                    dedicated to the love of travel and the discovery of life's adventures.</p>
-            </div>
-            <div class="box">
-                <h3>places</h3>
-                <a href="#">india</a>
-                <a href="#">australia</a>
-                <a href="#">japan</a>
-                <a href="#">france</a>
-            </div>
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="index.html">home</a>
-                <a href="blogs.html">Blogs</a>
-                <a href="places.html">places</a>
-                <a href="contact.html">contact</a>
-                <a href="about.html">about us</a>
-            </div>
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">instagram</a>
-                <a href="#">twitter</a>
-                <a href="#">linkedin</a>
-            </div>
-
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            We are passionate about exploring new horizons and sharing our
+            experiences with you. Our website is dedicated to the love of travel
+            and the discovery of life's adventures.
+          </p>
         </div>
+        <div class="box">
+          <h3>places</h3>
+          <a href="#">india</a>
+          <a href="#">australia</a>
+          <a href="#">japan</a>
+          <a href="#">france</a>
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html">home</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="places.html">places</a>
+          <a href="contact.html">contact</a>
+          <a href="about.html">about us</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
 
-        <h1 class="credit"> created by <span> Bloggers </span> | all rights reserved! </h1>
-
+      <h1 class="credit">
+        created by <span> Bloggers </span> | all rights reserved!
+      </h1>
     </section>
 
     <!-- custom js file link  -->
     <script src="js/authentication.js"></script>
     <script src="js/reviewScript.js"></script>
     <script src="js/script1.js"></script>
-
-</body>
-
+  </body>
 </html>

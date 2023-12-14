@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Say 'yes' to travel; where every journey becomes a chapter in the book of
+      life
+    </title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Say 'yes' to travel; where every journey becomes a chapter in the book of life</title>
-
-    
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- header section starts  -->
 
     <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
 
-        <div id="menu-bar" class="fas fa-bars"></div>
+      <div class="logo">
+        <img src="./images/Logo.png" alt="logo" />
+      </div>
 
-        <a href="index.html" class="logo"><span>T</span>ravel<span> B</span>log</a>
+      <nav class="navbar" id="navbar">
+        <a href="index.html" class="selNav active">home</a>
+        <a href="blogs.html" class="selNav">Blogs</a>
+        <a href="places.html" class="selNav">places</a>
+        <a href="contact.html" class="selNav">contact</a>
+        <a href="about.html" class="selNav">about us</a>
+      </nav>
 
-        <nav class="navbar" id="navbar">
-            <a href="index.html" class="selNav active">home</a>
-            <a href="blogs.html" class="selNav">Blogs</a>
-            <a href="places.html" class="selNav">places</a>
-            <a href="contact.html" class="selNav">contact</a>
-            <a href="about.html" class="selNav">about us</a>
-        </nav>
-
-        <div class="icons" id="userDropdown">
-            <i class="fas fa-user-circle" onclick="logout()"></i>
-            </div>
+      <div class="icons" id="userDropdown">
+        <i class="fas fa-user-circle" onclick="logout()"></i>
+      </div>
     </header>
 
     <!-- home section starts  -->
 
     <section class="home" id="home">
+      <div class="content">
+        <h3>Embrace Travel Adventures</h3>
+        <p>Discover Your Soul's Odyssey</p>
+        <a href="places.html" class="btn">Explore Places</a>
+      </div>
 
-        <div class="content">
-            <h3>Embrace Travel Adventures</h3>
-            <p>Discover Your Soul's Odyssey</p>
-            <a href="places.html" class="btn">Explore Places</a>
-        </div>
-
-        <div class="video-container">
-            <video src="images/tr-video.mp4" id="video-slider" loop autoplay muted></video>
-        </div>
-
+      <div class="video-container">
+        <video
+          src="images/tr-video.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
     </section>
 
     <!-- home section ends -->
@@ -59,47 +66,46 @@
     <!-- footer section  -->
 
     <section class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>about us</h3>
-                <p>We are passionate about exploring new horizons and sharing our experiences with you. Our website is
-                    dedicated to the love of travel and the discovery of life's adventures.</p>
-            </div>
-            <div class="box">
-                <h3>places</h3>
-                <a href="#">india</a>
-                <a href="#">australia</a>
-                <a href="#">japan</a>
-                <a href="#">france</a>
-            </div>
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="index.html">home</a>
-                <a href="blogs.html">Blogs</a>
-                <a href="places.html">places</a>
-                <a href="contact.html">contact</a>
-                <a href="about.html">about us</a>
-            </div>
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">instagram</a>
-                <a href="#">twitter</a>
-                <a href="#">linkedin</a>
-            </div>
-
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            We are passionate about exploring new horizons and sharing our
+            experiences with you. Our website is dedicated to the love of travel
+            and the discovery of life's adventures.
+          </p>
         </div>
+        <div class="box">
+          <h3>places</h3>
+          <a href="#">india</a>
+          <a href="#">australia</a>
+          <a href="#">japan</a>
+          <a href="#">france</a>
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html">home</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="places.html">places</a>
+          <a href="contact.html">contact</a>
+          <a href="about.html">about us</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
 
-        <h1 class="credit"> created by <span> Bloggers </span> | all rights reserved! </h1>
-
+      <h1 class="credit">
+        created by <span> Bloggers </span> | all rights reserved!
+      </h1>
     </section>
 
     <!-- custom js file link  -->
     <script src="js/authentication.js"></script>
     <script src="js/script1.js"></script>
-
-</body>
-
+  </body>
 </html>
