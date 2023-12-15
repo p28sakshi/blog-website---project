@@ -57,6 +57,8 @@ function addPost(e) {
     displayPosts();
 
     resetForm(); // Reset the form fields after adding a post
+
+    window.location.href = 'index.html';
 }
 
 
@@ -93,17 +95,6 @@ function displayPosts() {
     var boxContainer = document.querySelector('.box-container');
     boxContainer.innerHTML = '';
 
-    // Default Post
-    boxContainer.innerHTML += `
-        <div class="box">
-            <img src="images/place-1.jpg" alt="">
-            <div class="content">
-                <h3>Amazing Places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="#" class="btn" onclick="showDescription(0)">see more</a>
-            </div>
-        </div>
-    `;
 
     // Append Existing Posts Below Default Post
     for (var i = 0; i < posts.length; i++) {
@@ -147,6 +138,8 @@ function deletePost(index) {
     displayPosts();
 
     resetForm(); // Reset the form fields after adding a post
+
+    window.location.href = 'index.html';
 }
 
 function editPost(index) {
@@ -172,23 +165,8 @@ function editPost(index) {
 
     // Open the modal for editing
     openModal();
+
+    window.location.href = 'index.html';
 }
   displayPosts();
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

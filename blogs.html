@@ -1,133 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Say 'yes' to travel; where every journey becomes a chapter in the book of life</title>
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Say 'yes' to travel; where every journey becomes a chapter in the book of life</title>
 
-    <!-- font awesome cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-  <body>
-    <!-- header section starts  -->
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <header>
-      <div id="menu-bar" class="fas fa-bars"></div>
+<body>
+  <!-- header section starts  -->
 
-      <div class="logo">
-        <img src="./images/Logo.png" alt="logo" />
-      </div>
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
 
-        <nav class="navbar" id="navbar">
-          <a href="index.html" class="selNav">home</a>
-          <a href="blogs.html" class="selNav active" >Blogs</a>
-          <a href="places.html" class="selNav">places</a>
-          <a href="contact.html" class="selNav">contact</a>
-          <a href="about.html" class="selNav">about us</a>
-      </nav>
-
-      <div class="icons" id="userDropdown">
-        <i class="fas fa-user-circle" onclick="logout()"></i>
-        </div>
-    </header>
-
-    <!-- header section ends -->
-
-    <!-- packages section starts  -->
-
-    <section class="blogs" id="blogs">
-      <h1 class="heading">
-        <span>b</span>
-        <span>l</span>
-        <span>o</span>
-        <span>g</span>
-        <span>s</span>
-      </h1>
-
-      <div class="blog-btn-container">
-        <div class="content">
-            <a href="#" class="btn" onclick="openModal()">Create New Post</a>
-        </div>
-      </div>
-
-      <!-- Modal Form -->
-      <div id="myModal" class="modal">
-        <i class="fas fa-times" onclick="closeModal()" id="form-close"></i>
-        <form id="myForm">
-          <h3>Add Post</h3>
-          <input type="text" id="name" class="box" placeholder="Enter your Name" />
-          <textarea placeholder="Description" name="description" id="description" cols="30" rows="10"></textarea>
-          <input type="file" id="image" accept="image/*" />
-          <input type="submit" class="btn" value="Add Post" onclick="addPost(event)" />
-        </form>
-      </div>
-  <!-- Modal Form -->
-
-  <div class="box-container">
-    <!-- Default Post -->
-    <div class="box">
-        <img src="images/g-1.jpg" alt="">
-        <div class="content">
-            <h3>Amazing Places</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-            <a href="#" class="btn">see more</a>
-        </div>
+    <div class="logo">
+      <img src="./images/Logo.png" alt="logo" />
     </div>
-    </section>
 
-    <!-- packages section ends -->
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="selNav">home</a>
+      <a href="blogs.html" class="selNav active">Blogs</a>
+      <a href="places.html" class="selNav">places</a>
+      <a href="contact.html" class="selNav">contact</a>
+      <a href="about.html" class="selNav">about us</a>
+    </nav>
 
-    <!-- footer section  -->
+    <div class="icons" id="userDropdown">
+      <i class="fas fa-user-circle" onclick="logout()"></i>
+    </div>
+  </header>
 
-    <section class="footer">
-      <div class="box-container">
-        <div class="box">
-          <h3>about us</h3>
-          <p>We are passionate about exploring new horizons and sharing our experiences with you. Our website is
-              dedicated to the love of travel and the discovery of life's adventures.</p>
+  <!-- header section ends -->
+
+  <!-- packages section starts  -->
+
+  <section class="blogs" id="blogs">
+    <h1 class="heading">blogs
+    </h1>
+
+    <div class="blog-btn-container">
+      <div class="content">
+        <a href="#" class="btn" onclick="openModal()">Create New Post</a>
       </div>
-        <div class="box">
-          <h3>places</h3>
-          <a href="#">india</a>
-          <a href="#">australia</a>
-          <a href="#">japan</a>
-          <a href="#">france</a>
-      </div>
-        <div class="box">
-                <h3>quick links</h3>
-                <a href="index.html">home</a>
-                <a href="blogs.html">Blogs</a>
-                <a href="places.html">Places</a>
-                <a href="contact.html">contact</a>
-                <a href="about.html">about us</a>
-            </div>
-        <div class="box">
-          <h3>follow us</h3>
-          <a href="#">facebook</a>
-          <a href="#">instagram</a>
-          <a href="#">twitter</a>
-          <a href="#">linkedin</a>
-        </div>
-      </div>
+    </div>
 
-      <h1 class="credit">
-        created by <span> Bloggers </span> | all rights reserved!
-      </h1>
-    </section>
+    <!-- Modal Form -->
+    <div id="myModal" class="modal">
+      <i class="fas fa-times" onclick="closeModal()" id="form-close"></i>
+      <form id="myForm">
+        <h3>Add Post</h3>
+        <input type="text" id="name" class="box" placeholder="Enter your Name" />
+        <textarea placeholder="Description" name="description" id="description" cols="30" rows="10"></textarea>
+        <input type="file" id="image" accept="image/*" />
+        <input type="submit" class="btn" value="Add Post" onclick="addPost(event)" />
+      </form>
+    </div>
+    <!-- Modal Form -->
 
-    <!-- custom js file link  -->
-    <script src="js/script.js"></script>
-  </body>
+    <div class="box-container" id="box-container">
+      <!-- Default Post -->
+      <div id="blogs-container" class="blogs-container">
+      </div>
+    </div>
+  </section>
+
+  <!-- packages section ends -->
+
+  <!-- footer section  -->
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>about us</h3>
+        <p>We are passionate about exploring new horizons and sharing our experiences with you. Our website is
+          dedicated to the love of travel and the discovery of life's adventures.</p>
+      </div>
+      <div class="box">
+        <h3>places</h3>
+        <a href="#">india</a>
+        <a href="#">australia</a>
+        <a href="#">japan</a>
+        <a href="#">france</a>
+      </div>
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="index.html">home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="places.html">Places</a>
+        <a href="contact.html">contact</a>
+        <a href="about.html">about us</a>
+      </div>
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="#">facebook</a>
+        <a href="#">instagram</a>
+        <a href="#">twitter</a>
+        <a href="#">linkedin</a>
+      </div>
+    </div>
+
+    <p class="credit">
+      created by <span> The Wanderers </span> | all rights reserved!
+    </p>
+  </section>
+
+  <!-- custom js file link  -->
+  <script src="js/script1.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
